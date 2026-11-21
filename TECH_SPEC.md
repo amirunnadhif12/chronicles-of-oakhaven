@@ -70,15 +70,20 @@ Seluruh nama file, folder, dan variabel di Godot wajib memakai **`snake_case` (h
 
 ---
 
-## 5. Pembagian Kerja & Aturan Git (Anti-Konflik)
+## 5. Susunan Tim, Pembagian Kerja, & Aturan Git
+### Susunan Role Tim
+* **Desainer Game (Visual, UI, & Level):** Muhammad Amirun Nadhif & Arya Putra Irwansyah
+* **Programmer:** Rahmansyah Ragil Cahyadi
+* **Sound Designer:** Moh. Arlyano Swandaru
+* **Konseptor (Narasi, Fase, & Dialog):** Muhammad Sahbilul Khoir
+
+### Aturan Git & Kolaborasi (Anti-Konflik)
 1. **Dilarang mengedit file `.tscn` yang sama atau `project.godot` secara bersamaan.**
-2. **Pembagian Kepemilikan Scene (Contoh):**
-   * *Programmer A:* `player.tscn`, `oakhaven_village.tscn`, `TimeManager`
-   * *Programmer B:* `dialog_box.tscn`, `path_action_menu.tscn`, `npc_base.tscn`
-   * *Programmer C:* `combat_scene.tscn`, sistem *Reactive Parry* & *Break*
-3. **Alur Git Harian:**
+   * *Programmer* (`Rahmansyah`) memegang logika script (`.gd`), sistem combat, `QuestManager`, dan `dialog_box.tscn`.
+   * *Desainer Game* (`Amirun` & `Arya`) menyiapkan aset `.png` (`assets/sprites/`), layout UI di Figma, serta menyusun map di `oakhaven_village.tscn` / `whispering_forest.tscn` (satu map satu penanggung jawab).
+2. **Alur Git Harian:**
    * `git pull` sebelum mulai kerja.
-   * Kerjakan 1 fitur kecil → **Play & Test di Godot** → `git commit -m "feat: deskripsi singkat"` → `git push`.
+   * Kerjakan 1 fitur/aset kecil → **Play & Test di Godot** → `git commit -m "feat: deskripsi singkat"` → `git push`.
    * Selalu `git commit` sebelum meminta AI merombak kode besar.
 
 ---
